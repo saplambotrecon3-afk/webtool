@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - KHOKEYVN</title>
+    <link rel="icon" href="images/logo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="WEBTOOL" class="logo-img">
+                <span>WEB TOOL VN</span>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="header-icons">
+                <!-- <button class="icon-btn" title="Giỏ hàng">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="icon-btn" title="Yêu thích">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="icon-btn" title="Tin nhắn">
+                    <i class="far fa-comment"></i>
+                    <span class="badge">0</span>
+                </button>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                    <span class="user-name">DAMDUYTHAI</span>
+                    <span class="user-time">0d</span>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+            <i class="fas fa-chevron-right"></i>
+            <span id="productBreadcrumb">Sản phẩm</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content product-detail-page">
+        <!-- Product Detail Container -->
+        <div class="product-detail-container">
+            <!-- Product Image Section -->
+            <div class="product-detail-image">
+                <div class="main-image" id="mainImage">
+                    <img id="productImg" alt="Ảnh sản phẩm">
+                </div>
+                
+                <!-- Purchase Buttons -->
+                <div class="purchase-buttons">
+                    <button class="btn-purchase btn-purchase-primary" id="purchaseBtn1">
+                        <i class="fas fa-bolt"></i>
+                        Mua tự động
+                    </button>
+                    <button class="btn-purchase btn-purchase-secondary" id="purchaseBtn2">
+                        <i class="fas fa-qrcode"></i>
+                        Liên hệ Duy Thái để mua
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Description Section -->
+            <div class="product-detail-description">
+                <h1 id="productName" class="product-detail-name"></h1>
+                
+                <div class="product-detail-rating">
+                    <div class="rating-stars" id="detailStars"></div>
+                    <span id="detailRating" class="rating-number">5.0</span>
+                    <span id="detailReviews" class="rating-reviews">(2 đánh giá)</span>
+                    <span id="detailBuyers" class="rating-buyers">Đã bán 3.4k</span>
+                </div>
+
+                <div class="product-detail-price">
+                    <span id="productPrice" class="price-text"></span>
+                </div>
+
+                <div class="description-content" id="descriptionContent">
+                    <h3>Về Sản Phẩm</h3>
+                    <p>Sản phẩm này là tài khoản cao cấp được kiểm chứng 100% chính hãng từ nhà cung cấp chính thức.</p>
+                    
+                    <h4>Ưu điểm:</h4>
+                    <ul>
+                        <li>✓ Truy cập không giới hạn tất cả các tính năng</li>
+                        <li>✓ Không có quảng cáo</li>
+                        <li>✓ Được ưu tiên hỗ trợ 24/7</li>
+                        <li>✓ Cập nhật tính năng mới trước tiên</li>
+                        <li>✓ Chia sẻ tài khoản cho nhiều người dùng</li>
+                    </ul>
+
+                    <h4>Hướng dẫn sử dụng:</h4>
+                    <ol>
+                        <li>Mua sản phẩm và thanh toán</li>
+                        <li>Nhận thông tin tài khoản qua email hoặc tin nhắn</li>
+                        <li>Đăng nhập vào tài khoản của bạn</li>
+                        <li>Sử dụng tất cả tính năng cao cấp</li>
+                    </ol>
+
+                    <h4>Thông tin chi tiết:</h4>
+                    <table class="details-table">
+                        <tr>
+                            <td class="label">Nhà cung cấp:</td>
+                            <td>Đàm Duy Thái</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Loại sản phẩm:</td>
+                            <td>Tài khoản cao cấp</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Bảo hành:</td>
+                            <td>1+ (Bảo hành vĩnh viễn)</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Hỗ trợ:</td>
+                            <td>24/7 qua email, chat, điện thoại</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Giao hàng:</td>
+                            <td>Tức thì sau khi thanh toán</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <section class="related-products-section">
+            <h2>Sản phẩm tương tự</h2>
+            <div class="products-grid" id="relatedProducts">
+                <!-- Related products will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2>Thanh toán QR Code</h2>
+            </div>
+            <div class="modal-body">
+                <div class="qr-container">
+                    <img src="images/qr.jpg" alt="QR Code" class="qr-image">
+                </div>
+                <div class="payment-instruction">
+                    <div class="instruction-title">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Hướng dẫn thanh toán</span>
+                    </div>
+                    <ul class="instruction-list">
+                        <li>Quét mã QR trên cùng bằng điện thoại</li>
+                        <li>Nhập <strong>số điện thoại</strong> của bạn</li>
+                        <li>Nhập <strong>tên tool</strong> mà bạn đang mua</li>
+                        <li>Hoàn tất thanh toán</li>
+                        <li>Tool sẽ tự động được gửi đến số điện thoại của bạn trong 5 phút</li>
+                    </ul>
+                    <div class="payment-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span><strong>Lưu ý:</strong> Hãy kiểm tra số điện thoại và tên tool trước khi thanh toán</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 DamDuyThai. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="product-detail.js"></script>
+    <!-- Contact Widget -->
+    <div class="contact-widget" id="contactWidget">
+        <div class="contact-options" id="contactOptions">
+            <a href="https://youtube.com/@damduythai" target="_blank" rel="noopener" class="contact-option" title="Messenger">
+                <img src="images/messenger_icon.png" alt="Messenger">
+            </a>
+            <a href="https://zalo.me/0358719963" target="_blank" rel="noopener" class="contact-option" title="Zalo">
+                <img src="images/zalo_icon.png" alt="Zalo">
+            </a>
+        </div>
+        <button class="contact-toggle" id="contactToggle" aria-label="Liên hệ">
+            <span class="contact-label">Liên hệ</span>
+            <img src="images/logo.png" alt="Liên hệ">
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHOKEYVN - Tài Khoản Premium Giá Rẻ</title>
+    <link rel="icon" href="images/logo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                 <img src="images/logo.png" alt="WEBTOOL" class="logo-img">
+                <span>WEB TOOL VN</span>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="header-icons">
+                <!-- <button class="icon-btn" title="Giỏ hàng">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="icon-btn" title="Yêu thích">
+                    <i class="far fa-heart"></i>
+                    <span class="badge">0</span>
+                </button>
+                <button class="icon-btn" title="Tin nhắn">
+                    <i class="far fa-comment"></i>
+                    <span class="badge">0</span>
+                </button> -->
+                <div class="user-profile">
+                    <span class="user-name"></span>
+                    <span class="user-time"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Featured Products Section -->
+        <section class="featured-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <i class="fas fa-fire"></i>
+                    <h2>Sản phẩm nổi bật</h2>
+                </div>
+                <p class="section-description">
+                </p>
+                <a href="#" class="view-all-btn">Xem tất cả →</a>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn">Tải thêm sản phẩm</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- Contact Widget -->
+    <div class="contact-widget" id="contactWidget">
+        <div class="contact-options" id="contactOptions">
+            <a href="https://www.facebook.com/profile.php?id=61583287299150" target="_blank" rel="noopener" class="contact-option" title="Messenger">
+                <img src="images/messenger_icon.png" alt="Messenger">
+            </a>
+            <a href="https://zalo.me/0358719963" target="_blank" rel="noopener" class="contact-option" title="Zalo">
+                <img src="images/zalo_icon.png" alt="Zalo">
+            </a>
+        </div>
+        <button class="contact-toggle" id="contactToggle" aria-label="Liên hệ">
+            <span class="contact-label">Liên hệ</span>
+            <img src="images/logo.png" alt="Liên hệ">
+        </button>
+    </div>
+</body>
+</html>
